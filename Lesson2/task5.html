@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case '+':
+                    return sum(arg1, arg2);
+                case '-':
+                    return dif(arg1, arg2);
+                case '*':
+                    return mul(arg1, arg2);
+                case '/':
+                    return div(arg1, arg2);
+            }
+
+        }
+
+        alert(`Сумма ${num1} и ${num2} = ${mathOperation(num1, num2, '+')}`);
+        alert(`Разность ${num1} и ${num2} = ${mathOperation(num1, num2, '-')}`);
+        alert(`Произведение ${num1} и ${num2} = ${mathOperation(num1, num2, '*')}`);
+        alert(`Деление ${num1} и ${num2} = ${mathOperation(num1, num2, '/')}`);
+    </script>
+</body>
+</html>
